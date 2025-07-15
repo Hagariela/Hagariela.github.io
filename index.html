@@ -1,11 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hagar Meir | Home</title>
+
+  <!-- 1‑line import of a nice open‑source font -->
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* ===== Page‑level reset & layout ===== */
+    html,body{
+      height:100%;
+      margin:0;
+    }
+    body{
+      display:flex;                 /* Centre everything horizontally AND vertically */
+      justify-content:center;
+      align-items:flex-start;       /* change to center if you want perfect vertical centring */
+      font-family:'Source Sans Pro', Arial, sans-serif;
+      background:#fafafa;
+      color:#222;
+    }
+
+    /* ===== Main content block ===== */
+    .container{
+      max-width:800px;
+      padding:40px 20px;
+      text-align:center;            /* Centre all inline text */
+    }
+
+    /* ===== Typography tweaks ===== */
+    h1{
+      font-weight:600;
+      margin:0 0 0.5em;
+      font-size:2.2rem;
+    }
+    p{
+      font-size:1.15rem;
+      line-height:1.6;
+      margin:1rem 0;
+    }
+  </style>
+</head>
+
 <body>
+  <div class="container">
+    <h1>Hello, I’m Hagar Meir</h1>
 
-<h1>My First Heading</h1>
-
-<p>My first paragraph.</p>
-
+    <p>
+      I want to write about my research and findings, I think it'll be fun!
+    </p>
+  </div>
 </body>
 </html>
-
