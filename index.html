@@ -4,57 +4,55 @@
   <meta charset="UTF-8">
   <title>Hagar Meir | Home</title>
 
-  <!-- 1‑line import of a nice open‑source font -->
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
-    /* ===== Page‑level reset & layout ===== */
-    html,body{
-      height:100%;
-      margin:0;
+    /* ——— Page reset & layout ——— */
+    html, body {
+      height: 100%;
+      margin: 0;
     }
-    body{
-      display: flex;                   /* centre the box horizontally */
+    body {
+      display: flex;                 /* centre horizontally */
       justify-content: center;
-      align-items: flex-start;         /* change to center for perfect vertical centring */
-      padding: 60px 15px;              /* breathing room on phones */
-      background-image: url('lXueN.png');  /* or a pattern or external link */
-      background-size: cover;                  /* stretch to fill screen */
-      background-position: center;             /* center the image */
-      background-repeat: repeat;            /* no tiling */
-      background-size: 80px 80px;  /* width × height of each tile */
-      background-attachment: fixed;            /* stay fixed on scroll */
-      align-items:flex-start;       /* change to center if you want perfect vertical centring */
-      font-family:'Source Sans Pro', Arial, sans-serif;
-      /*background:#fafafa;*/
-      color:#222;
+      align-items: flex-start;       /* change to 'center' for vertical centring */
+      padding: 60px 15px;
+
+      /* repeating background pattern */
+      background-image: url('lXueN.png');   /* adjust path if inside images/ */
+      background-repeat: repeat;
+      background-size: 80px 80px;    /* tile size */
+      background-position: top left;
+      background-attachment: fixed;
+
+      font-family: 'Source Sans Pro', Arial, sans-serif;
+      color: #222;
     }
 
-      /* —————  CONTENT BOX  ————— */
+    /* ——— Content box ——— */
     .content {
-      max-width: 840px;                /* keep lines readable */
+      max-width: 840px;
       width: 100%;
       padding: 48px 32px;
-      background: #ffffff;             /* solid white; use rgba(255,255,255,0.9) for translucency */
+      background: #fff;              /* solid white */
       border-radius: 18px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.15); /* subtle elevation */
-      text-align: center;              /* centre text and inline elements */
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+      text-align: center;
     }
 
-
-    /* ===== Typography tweaks ===== */
-    h1{
-      font-weight:600;
-      margin:0 0 0.5em;
-      font-size:2.2rem;
+    /* ——— Typography ——— */
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 600;
+      margin: 0 0 0.6em;
     }
-    p{
-      font-size:1.15rem;
-      line-height:1.6;
-      margin:1rem 0;
+    p {
+      font-size: 1.15rem;
+      line-height: 1.6;
+      margin: 1.2em 0;
     }
 
-        /* —————  OPTIONAL: IMAGE STYLE  ————— */
+    /* ——— Optional circular portrait ——— */
     .profile {
       width: 220px;
       max-width: 80%;
@@ -66,20 +64,23 @@
 </head>
 
 <body>
-  <div class="container">
+  <!-- class name changed to match the CSS selector -->
+  <div class="content">
     <h1>Hello, I’m Hagar Meir</h1>
 
     <p>
       I want to write about my research and findings, I think it'll be fun!
-      *Classical Mechanics
-      *Thermodynamics
-      *Quantum Mechanics
-      *Statistical Mechanics
-      *Particles and Fields
-      *creation and annihilation
     </p>
+
+    <!-- Example bulleted list -->
+    <ul style="text-align:left; display:inline-block; margin:0 auto;">
+      <li>Classical Mechanics</li>
+      <li>Thermodynamics</li>
+      <li>Quantum Mechanics</li>
+      <li>Statistical Mechanics</li>
+      <li>Particles and Fields</li>
+      <li>Creation &amp; Annihilation Operators</li>
+    </ul>
   </div>
 </body>
 </html>
-
-
