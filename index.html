@@ -14,8 +14,10 @@
       margin:0;
     }
     body{
-      display:flex;                 /* Centre everything horizontally AND vertically */
-      justify-content:center;
+      display: flex;                   /* centre the box horizontally */
+      justify-content: center;
+      align-items: flex-start;         /* change to center for perfect vertical centring */
+      padding: 60px 15px;              /* breathing room on phones */
       background-image: url('lXueN.png');  /* or a pattern or external link */
       background-size: cover;                  /* stretch to fill screen */
       background-position: center;             /* center the image */
@@ -28,14 +30,17 @@
       color:#222;
     }
 
-
-
-    /* ===== Main content block ===== */
-    .container{
-      max-width:800px;
-      padding:40px 20px;
-      text-align:center;            /* Centre all inline text */
+      /* —————  CONTENT BOX  ————— */
+    .content {
+      max-width: 840px;                /* keep lines readable */
+      width: 100%;
+      padding: 48px 32px;
+      background: #ffffff;             /* solid white; use rgba(255,255,255,0.9) for translucency */
+      border-radius: 18px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15); /* subtle elevation */
+      text-align: center;              /* centre text and inline elements */
     }
+
 
     /* ===== Typography tweaks ===== */
     h1{
