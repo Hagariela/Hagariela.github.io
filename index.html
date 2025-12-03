@@ -66,23 +66,31 @@
 <body>
   <!-- class name changed to match the CSS selector -->
   <div class="content">
-    <h1>Hello, I’m Hagar Meir</h1>
-    <img src="Designer.png" class="profile" style="float:right; margin-left:20px;">
 
+  <div style="display:flex; align-items:center; justify-content:space-between; gap:20px;">
+    <div style="text-align:left; flex:1;">
+      <h1>Hello, I’m Hagar Meir</h1>
+      <p>I want to write about my research and findings, I think it'll be fun!</p>
+    </div>
 
-    <p>
-      I want to write about my research and findings, I think it'll be fun!
-    </p>
-
-    <!-- Example bulleted list -->
-    <ul style="text-align:left; display:inline-block; margin:0 auto;">
-      <li>Classical Mechanics</li>
-      <li>Thermodynamics</li>
-      <li>Quantum Mechanics</li>
-      <li>Statistical Mechanics</li>
-      <li>Particles and Fields</li>
-      <li>Creation &amp; Annihilation Operators</li>
-    </ul>
+    <img src="Designer.png" alt="portrait" 
+         style="width:180px; height:180px; border-radius:50%; object-fit:cover; box-shadow:0 2px 8px rgba(0,0,0,0.12);">
   </div>
+
+  <ul style="text-align:left; display:inline-block; margin:1.5rem auto 0;">
+    <li>Classical Mechanics</li>
+    <li>Thermodynamics</li>
+    <li>Quantum Mechanics</li>
+    <li>Statistical Mechanics</li>
+    <li>Particles and Fields</li>
+    <li>Creation &amp; Annihilation Operators</li>
+  </ul>
+
+</div>
+
+
+
+  
+
 </body>
 </html>
